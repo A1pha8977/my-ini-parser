@@ -1,5 +1,5 @@
-#ifndef LINKEDLIST_H
-#define LINKEDLIST_H
+#ifndef LINKED_LIST_H
+#define LINKED_LIST_H
 
 struct linked_list {
         int size;
@@ -20,4 +20,4 @@ void remove_next(struct linked_list *this, void (*freer)(void *));
 void deep_free(struct linked_list *this, void (*freer)(void *));
 
 
-#endif //LINKEDLIST_H
+#endif //LINKED_LIST_H

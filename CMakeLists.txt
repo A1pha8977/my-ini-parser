@@ -6,6 +6,7 @@ add_executable(ini-parser
         src/main.c
         src/linked-list/linked_list.c
         include/linked-list/linked_list.h
+        include/ini-parser/ini-parser.h
 )
 
 include_directories(include)

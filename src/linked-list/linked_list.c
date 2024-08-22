@@ -3,17 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct linked_list *linked_list_init();
 
 void *safe_malloc(size_t size);
 
-struct linked_list *linked_list_init() {
-        struct linked_list *linked_list = safe_malloc(sizeof(struct linked_list));
-        linked_list->size = sizeof(void *);
-        linked_list->e = NULL;
-        linked_list->next = NULL;
-        return linked_list;
-}
 
 struct linked_list *new_linked_list(const int size, const void *e) {
         struct linked_list *linked_list = safe_malloc(sizeof(struct linked_list));
