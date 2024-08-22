@@ -4,8 +4,8 @@ set(CMAKE_C_STANDARD 23)
 
 add_executable(ini-parser
         src/main.c
-        src/LinkedList/LinkedList.c
-        include/LinkedList/LinkedList.h
+        src/linked-list/linked_list.c
+        include/linked-list/linked_list.h
 )
 
 include_directories(include)
